@@ -1,0 +1,55 @@
+<ion-view view-title="Settings">
+  <ion-content>
+      <div class="card">
+            <div class="list">
+                    <label class="item item-input item-stacked-label">
+                      <span class="input-label">AMQ BROKER URL</span>
+                      <input type="text" placeholder="localhost">
+                    </label>
+                    <label class="item item-input item-stacked-label">
+                      <span class="input-label">AMQ MQTT PORT</span>
+                      <input type="text" placeholder="1833">
+                    </label>
+                    <label class="item item-input item-stacked-label">
+                      <span class="input-label">TOPIC</span>
+                      <input type="text" placeholder="bestmart">
+                    </label>
+                    <label class="item item-input item-stacked-label">
+                            <span class="input-label">CLIENT ID</span>
+                            <input type="text" placeholder="BestMart_ID">
+                    </label>
+            </div>          
+<!-- 
+        <button class="button button-block button-positive" ng-click="connectToAMQ()">
+            Connect to AMQ7
+        </button>
+        <button class="button button-block button-positive" ng-click="subscribeToTopic()">
+                Subscribe to topic
+        </button>
+        <button class="button button-block button-positive" ng-click="sendMessage('What the what?')">
+                Send message to AMQ7
+        </button>
+            <div>
+            <p>
+                {{console.messages}}
+            </p>
+        </div>
+
+        <button class="button button-block button-positive" ng-click="disconnectFromAMQ()">
+                Disconnect from AMQ7
+        </button>
+ -->
+        <!-- <ion-list>
+        <ion-toggle  ng-model="settings.enableFriends">
+            Enable Friends
+        </ion-toggle>
+        </ion-list> -->
+    </div>
+
+        <button class="button button-block button-positive" ng-click="connectToAMQ()">
+                Update Settings
+        </button>
+
+
+  </ion-content>
+</ion-view>

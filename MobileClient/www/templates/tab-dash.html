@@ -1,0 +1,46 @@
+<ion-view view-title="Warehouse" hide-nav-bar="true">
+  <ion-content class="" style="background-color: lightgray">
+    
+    <img src="img/BM_HERO.png" style="width:100%">
+
+    <div class="list card" style="padding:0 !important">
+      <a href="#/tab/dash/orders">
+      <div style="float:left; width:25%">
+          <img src="img/HANDCART.png" style="width:100%; height:100%">
+      </div>
+      <div style="float:right; width:75%; height:100%; padding:5px; background-color:white">
+          <h4>Customer Orders</h4>
+          {{status.message}}
+      </div>    
+      </a>
+    </div>
+
+    <div class="list card" style="padding:0 !important">
+        <div style="float:left; width:25%">
+          <img src="img/INVENTORY.png" style="width:100%; height:100%">
+        </div>
+        <div style="float:right; width:75%; height:100%; padding:5px; background-color:white">
+          <h4>Inventory</h4>
+          <p>There are 8 items unaccounted for</p>
+        </div>
+    </div>
+
+    <div class="list card" style="padding:0 !important">
+        <div style="float:left; width:25%">
+          <img src="img/TRUCKS.png" style="width:100%; height:100%">
+        </div>
+        <div style="float:right; width:75%; height:100%; padding:5px; background-color:white">
+          <h4>Shipping & Receiving</h4>
+          <p>There a 4 items waiting for outbound deliver and 5 items for inbound delivery</p>
+        </div>
+    </div>
+
+    <!-- <div class="list card">
+        <a class="item item-icon-left assertive" href="#">
+          <i class="icon ion-music-note"></i>
+          Start listening
+        </a>        
+    </div>  -->
+     
+  </ion-content>
+</ion-view>

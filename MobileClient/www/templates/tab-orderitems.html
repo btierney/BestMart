@@ -1,0 +1,32 @@
+<ion-view view-title="Order Items">
+  <ion-content>
+    <div class="list">
+
+        <a ng-repeat="item in orderitems" 
+            href="#/{{item.itemid}}"
+            class="item item-thumbnail-left">
+
+            <img ng-src="{{ item.thumbnailImage }}">
+            <div style="border-left: 1px solid #cdcdcd; height:75px; padding-left: 10px; padding-top:5px;">
+            <h3>{{ item.name }}</h3>
+            <h4>{{ item.categoryPath }}</h4>
+            <h4>Item #: {{item.itemId}}</h4>
+            </div>
+        </a>
+    
+    </div>    
+
+    <!-- <ion-list>
+        <ion-item class="item-remove-animate item-avatar item-icon-right" ng-repeat="item in orderitems" type="item-text-wrap" href="#/tab/chats/{{item.itemId}}">
+        <img ng-src="{{item.thumbnailImage}}">
+        <h2>{{item.name}}</h2>
+        <p>{{item.categoryPath}}</p>
+        <i class="icon ion-chevron-right icon-accessory"></i>
+
+        <ion-option-button class="button-assertive" ng-click="remove(chat)">
+          Delete
+        </ion-option-button>
+      </ion-item>
+    </ion-list> -->
+  </ion-content>
+</ion-view>
